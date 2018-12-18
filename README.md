@@ -4,12 +4,12 @@ A theme for Typography.js
 
 ## Install
 ```bash
-npm install --save typography paul-typography-theme
+npm install --save typography @bipinpaulbedi/paul-blog-typography-theme
 ```
 ## Usage
 ```javascript
 import Typography from 'typography'
-import theme from 'paul-typography-theme'
+import theme from '@bipinpaulbedi/paul-blog-typography-theme'
 
 const typography = new Typography(theme)
 ```

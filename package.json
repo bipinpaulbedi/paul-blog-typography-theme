@@ -1,16 +1,18 @@
 {
-  "name": "paul-typography-theme",
-  "version": "1.0.1",
+  "name": "@bipinpaulbedi/paul-blog-typography-theme",
+  "version": "1.0.0",
   "description": "paul blog typography theme",
   "main": "dist/index.js",
   "author": "bipin paul bedi <bipinpaulbedi@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+  "dependencies": {    
     "gray-percentage": "^2.0.0",
     "typography-breakpoint-constants": "^0.16.18"
+  },
+  "devDependencies":{
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   },
   "keywords": [
     "css",
