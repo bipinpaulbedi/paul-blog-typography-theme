@@ -1,9 +1,7 @@
-// @flow
 import gray from 'gray-percentage'
-import type { OptionsType } from 'Types'
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 
-const theme: OptionsType = {
+const theme = {
   title: 'Paul Blog Theme',
   baseFontSize: '16px',
   baseLineHeight: 1.75,

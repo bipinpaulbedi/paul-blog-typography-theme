@@ -2,10 +2,13 @@
   "name": "paul-typography-theme",
   "version": "1.0.0",
   "description": "paul blog typography theme",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "bipin paul bedi <bipinpaulbedi@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "gray-percentage": "^2.0.0",
     "typography-breakpoint-constants": "^0.16.18"
   },
@@ -19,11 +22,8 @@
     "type": "git",
     "url": "https://github.com/bipinpaulbedi/paul-blog-typography-theme.git"
   },
-  "main": "./dist/index.js",
   "scripts": {
-    "build": "../../node_modules/.bin/babel src --out-dir dist/",
-    "flow": "../../node_modules/.bin/flow",
-    "lint": "../../node_modules/.bin/eslint --ext .js,.jsx --ignore-path .gitignore .",
-    "watch": "../../node_modules/.bin/babel -w src --out-dir dist/"
+    "build": "babel src --out-dir dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

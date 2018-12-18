@@ -1,0 +1,17 @@
+{
+    "sourceMaps": true,
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": 4.0,
+            "uglify": true
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
