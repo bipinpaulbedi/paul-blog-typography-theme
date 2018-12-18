@@ -1,10 +1,11 @@
 {
   "name": "@bipinpaulbedi/paul-blog-typography-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "paul blog typography theme",
   "main": "dist/index.js",
   "author": "bipin paul bedi <bipinpaulbedi@gmail.com>",
   "license": "MIT",
+  "files" : [],
   "dependencies": {    
     "gray-percentage": "^2.0.0",
     "typography-breakpoint-constants": "^0.16.18"
