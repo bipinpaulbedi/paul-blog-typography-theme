@@ -1,6 +1,12 @@
 import gray from 'gray-percentage'
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 
+const pallet = {
+  primary: '#3A3A38',
+  secondary: '#FF0084',
+  tertiary: '#797975'
+}
+
 const theme = {
   title: 'Paul Blog Theme',
   baseFontSize: '16px',
@@ -18,7 +24,7 @@ const theme = {
   ],
   headerFontFamily: ['Merriweather', 'Georgia', 'serif'],
   bodyFontFamily: ['Merriweather', 'Georgia', 'serif'],
-  bodyColor: 'hsla(0,0%,0%,0.9)',
+  bodyColor: pallet.primary,
   headerWeight: 900,
   bodyWeight: 400,
   boldWeight: 700,
@@ -26,9 +32,12 @@ const theme = {
     h1: {
       fontFamily: ['Montserrat', 'sans-serif'].join(','),
     },
+    code: {
+      color: pallet.secondary
+    },
     blockquote: {
       ...scale(1 / 5),
-      color: gray(41),
+      color: pallet.secondary,
       fontStyle: 'italic',
       paddingLeft: rhythm(13 / 16),
       marginLeft: rhythm(-1),
@@ -73,7 +82,7 @@ const theme = {
     },
     a: {
       boxShadow: '0 1px 0 0 currentColor',
-      color: '#007acc',
+      color: pallet.tertiary,
       textDecoration: 'none',
     },
     'a:hover,a:active': {
@@ -88,4 +97,4 @@ const theme = {
   }),
 }
 
-export default theme
+export { theme, pallet }

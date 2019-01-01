@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.pallet = exports.theme = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -15,6 +16,12 @@ var _typographyBreakpointConstants = require('typography-breakpoint-constants');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var pallet = {
+  primary: '#3A3A38',
+  secondary: '#FF0084',
+  tertiary: '#797975'
+};
 
 var theme = {
   title: 'Paul Blog Theme',
@@ -30,7 +37,7 @@ var theme = {
   }],
   headerFontFamily: ['Merriweather', 'Georgia', 'serif'],
   bodyFontFamily: ['Merriweather', 'Georgia', 'serif'],
-  bodyColor: 'hsla(0,0%,0%,0.9)',
+  bodyColor: pallet.primary,
   headerWeight: 900,
   bodyWeight: 400,
   boldWeight: 700,
@@ -44,8 +51,11 @@ var theme = {
       h1: {
         fontFamily: ['Montserrat', 'sans-serif'].join(',')
       },
+      code: {
+        color: pallet.secondary
+      },
       blockquote: _extends({}, scale(1 / 5), {
-        color: (0, _grayPercentage2.default)(41),
+        color: pallet.secondary,
         fontStyle: 'italic',
         paddingLeft: rhythm(13 / 16),
         marginLeft: rhythm(-1),
@@ -85,7 +95,7 @@ var theme = {
       fontStyle: 'italic'
     }), _defineProperty(_ref2, 'a', {
       boxShadow: '0 1px 0 0 currentColor',
-      color: '#007acc',
+      color: pallet.tertiary,
       textDecoration: 'none'
     }), _defineProperty(_ref2, 'a:hover,a:active', {
       boxShadow: 'none'
@@ -98,4 +108,5 @@ var theme = {
   }
 };
 
-exports.default = theme;
+exports.theme = theme;
+exports.pallet = pallet;
