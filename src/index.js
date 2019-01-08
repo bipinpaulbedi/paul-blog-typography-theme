@@ -2,9 +2,9 @@ import gray from 'gray-percentage'
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 
 const pallet = {
-  primary: '#3A3A38',
-  secondary: '#FF0084',
-  tertiary: '#797975'
+  primary: '#011f4b',
+  secondary: '#03396c',
+  tertiary: '#005b96'
 }
 
 const theme = {

@@ -18,9 +18,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var pallet = {
-  primary: '#3A3A38',
-  secondary: '#FF0084',
-  tertiary: '#797975'
+  primary: '#011f4b',
+  secondary: '#03396c',
+  tertiary: '#005b96'
 };
 
 var theme = {
